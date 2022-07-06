@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance</title>
+    <style>
+
+        body{
+            background-image: linear-gradient(to top, #95B0DC 300%,  #72afd3 0%);
+        }
+        h1{
+            font-size: 90px;
+            display: block;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+            border-radius: 30%;
+        }
+        hr{
+            line-height: 30px;
+        }
+        h2{
+            display:block;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+        img{
+            display: block;
+            margin: 50 auto;
+           border-radius: 10px;
+           border: #000;
+           border-width: 900px;
+           width:800px;
+        }
+        p{
+            color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            font-size: 50px;   
+        }
+        a{
+            font-size: 50px;
+            color: white;
+            display: block;
+            text-decoration: underline;
+            text-align: center;
+            margin: 40px auto;
+            padding:50px 50px auto;
+        }
+
+        button{
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            font-size: 100px;
+            color: #ffff;
+            border-radius: 20px;
+            background:linear-gradient(to top, #ffb6f9 0%, #72afd3 90%);
+            border-color: transparent;
+            margin: 0 auto;
+            border-radius: 40px;
+            padding: 20px 20px;
+            line-height: 20px auto;
+            box-shadow: none;
+
+        }
+        button:hover{
+            background-color:#72afd3;
+            color: #fff;
+            border-color: transparent;
+            background:linear-gradient(to top, #72afd3 0%, #ffb6f9 90%);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <em>
+            Dance
+        </em>
+    </h1>
+
+    <h2>Do you like to 
+    <stong>
+     dance   
+    </stong>
+    ?</h2>
+    <hr>
+
+    <img src="https://c8.alamy.com/comp/2AMXF2B/continuous-line-sketch-drawing-of-ballet-dancer-different-positions-2AMXF2B.jpg">
+    <p>
+       Dance occupies an important place in the social structure of all human cultures throughout history.<br>
+       Dance is most commonly defined as a way of human expression through movement.<br>
+       But dance simply cannot be reduced merely to movement.<br>
+       While it is true that movement is indeed a fundamental feature of dance, because dance can also be defined as a specific art movement, based on the expressive moves of the human body, dance is also much more.
+    </p>
+       <a href="http://www.drustvo-antropologov.si/AN/PDF/2010_3/Anthropological_Notebooks_XVI_3_Pusnik.pdf">
+           Keep reading...
+       </a>
+       <button>
+         Lets dance!  
+       </button>
+
+</body>
+<Script>
+    function letsDance(){
+         let dance = prompt("What is your favorite dance?");
+
+         if (dance === "hip hop"|| dance === "ballet"|| dance === "jazz") {
+       alert("That's also our favorite!"); 
+     } else {
+       alert("Nice! That's our favorite also!");
+     } 
+    }
+    let letsDanceButton = document.querySelector("button")
+        letsDanceButton.addEventListener("click", letsDance); 
+
+</Script>
+
+</html>
